@@ -1,0 +1,46 @@
+
+================ White Box Monitoring =============================
+White box monitoring is the monitoring of applications running on a server. Monitoring based on metrics exposed by the internals of the system, including logs, interfaces like the Java Virtual Machine Profiling Interface, or an HTTP handler that emits internal statistics. Other types of white box monitoring include:
+
+Monitoring MySQL queries running on a database server.
+Looking at the number of users utilizing a web application throughout the day, and alerting if this goes above a predefined threshold.
+
+Considering the above example of HTTP requests—splitting these out into monitoring the different kinds to ascertain how the application is performing, or whether users are getting served the correct content. For example, a 403 would demonstrate a user has tried to get to a part of the website they’re not allowed to visit. Likewise, a 200 would indicate their request was successful and they were served the content.
+
+Performing advanced detection of behavior we don’t expect to see, such as a user not going through the normal steps you’d expect when signing into your application or resetting a password.
+
+->The advantages of Black Box Monitoring:
+
+We obtain a better overview of the situation.
+Helps optimizing the code.
+Introspection of programmers, awareness of their actions.
+Allows finding hidden errors.
+All this leads to efficiency in finding errors and problems.
+Disadvantages of whitebox testing:
+
+We need to know the source code of the involved software(s).
+Requires a high level of understanding and experience of the affected program.
+
+List of White Box Monitoring tools:-
+
+Prometheus
+Pandora FMS
+Zabbix
+NewRelic
+AppDynamics
+
+
+
+======================Black Box Monitoring ====================
+
+Black box monitoring refers to the monitoring of servers with a focus on areas such as disk space, CPU usage, memory usage, load averages, etc. Testing externally visible behavior as a user would see it. These are what most in the industry would deem as the standard system metrics to monitor. Other types of black box monitoring include:
+
+Monitoring of network switches and other networking devices such as load balancers from the system metrics perspective, as defined above.
+Looking at hypervisor-level resource usage for all virtual machines running on the hypervisor (such as VMware, KVM, Xen, etc.).
+Alerting on hard disk errors that may present a problem if a disk isn’t replaced soon (using SMART, for instance).
+
+List of Black Box Monitoring tools
+
+Nagios
+Datadog
+Sysdig
